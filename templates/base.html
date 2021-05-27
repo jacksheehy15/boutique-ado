@@ -114,6 +114,7 @@
     {% if messages %}
         <div class="message-container">
             {% for message in messages %}
+<<<<<<< HEAD
                 {% with message.level as level %}
                     {% if level == 40 %}
                         {% include 'includes/toasts/toast_error.html' %}
@@ -125,6 +126,9 @@
                         {% include 'includes/toasts/toast_info.html' %}
                     {% endif %}
                 {% endwith %}
+=======
+                {% include 'includes/toasts/toast_success.html' %}
+>>>>>>> 5dc7bd346f33bb77d3fff5ded7b9b3ec79c5b32e
             {% endfor %}
         </div>
     {% endif %}
