@@ -3,10 +3,7 @@ from django.conf import settings
 from django.shortcuts import get_object_or_404
 from products.models import Product
 
-<<<<<<< HEAD
-=======
 
->>>>>>> 5dc7bd346f33bb77d3fff5ded7b9b3ec79c5b32e
 def bag_contents(request):
 
     bag_items = []
@@ -42,15 +39,9 @@ def bag_contents(request):
     else:
         delivery = 0
         free_delivery_delta = 0
-<<<<<<< HEAD
-    
-    grand_total = delivery + total
-    
-=======
 
     grand_total = delivery + total
 
->>>>>>> 5dc7bd346f33bb77d3fff5ded7b9b3ec79c5b32e
     context = {
         'bag_items': bag_items,
         'total': total,
@@ -61,8 +52,4 @@ def bag_contents(request):
         'grand_total': grand_total,
     }
 
-<<<<<<< HEAD
     return context
-=======
-    return context
->>>>>>> 5dc7bd346f33bb77d3fff5ded7b9b3ec79c5b32e
